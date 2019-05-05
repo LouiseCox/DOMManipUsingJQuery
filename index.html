@@ -8,9 +8,9 @@
 		
 	<script>
 		$(document).ready(function(){
-			$('.parag').slideUp();
-			$('.parag').slideDown();
+			$('.parag').slideUp().slideDown();
 			$('#par3').css({"border": "1px solid green"});
+			$('h1').addClass('selectMe');
 		});
 	</script>
 		
@@ -22,14 +22,18 @@
 
 	<h1>Header</h1>
 	
-	<p id="par1" class="parag" name="paragraphOne">Paragraph 1</p>
-	<p id="par2" class="parag" name="paragraphTwo">Paragraph 2</p>
-	<p id="par3" class="shortParag" name="paragraphThree">Paragraph 3</p>
+	<p id="par1" class="parag">Paragraph 1</p>
+	<p id="par2" class="parag">Paragraph 2</p>
+	<p id="par3" class="shortParag">Paragraph 3</p>
+
+	<style>
+		.selectMe{
+			color: red;
+		}
+	</style>
 
 </body>
 
-	<style>
-		
-	</style>
+
 
 </html>	
